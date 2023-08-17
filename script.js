@@ -6,7 +6,7 @@
   button.addEventListener("click", function() {
     const name = document.getElementById("name").value;
     const year = document.getElementById("year").value;
-
+ //  encodeURIComponent used to encode value of input 
     const queryString = `name=${encodeURIComponent(name)}&year=${encodeURIComponent(year)}`;
     const url = `https://localhost:8080/?${queryString}`;
     
